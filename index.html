@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Data Fetcher</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Pokédex Pro</h1>
+    </nav>
+
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="pokemonName" placeholder="Enter Pokémon name">
+            <button id="fetchData">Fetch Data</button>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div class="loading hidden"></div>
+
+        <!-- Pokémon Data Section -->
+        <div id="pokemonData" class="hidden">
+            <h2 id="pokemonNameDisplay"></h2>
+            <img id="pokemonImage" src="" alt="Pokemon Image" style="display:none;">
+            
+            <div class="data-section">
+                <h3>Abilities</h3>
+                <ul id="abilitiesList"></ul>
+            </div>
+
+            <div class="data-section">
+                <h3>Evolution Chain</h3>
+                <ul id="evolutionChain"></ul>
+            </div>
+
+            <div class="data-grid">
+                <div class="data-section">
+                    <h3>Gender Rate</h3>
+                    <p id="genderRate"></p>
+                </div>
+
+                <div class="data-section">
+                    <h3>Growth Rate</h3>
+                    <p id="growthRate"></p>
+                </div>
+            </div>
+
+            <div class="data-section">
+                <h3>Natures</h3>
+                <ul id="naturesList"></ul>
+            </div>
+
+            <div class="data-section">
+                <h3>Stats</h3>
+                <ul id="statsList"></ul>
+            </div>
+
+            <div class="data-section">
+                <h3>Types</h3>
+                <ul id="typesList"></ul>
+            </div>
+
+            <div class="data-grid">
+                <div class="data-section">
+                    <h3>Weaknesses</h3>
+                    <ul id="weaknessesList"></ul>
+                </div>
+
+                <div class="data-section">
+                    <h3>Type Advantages</h3>
+                    <ul id="typeAdvantagesList"></ul>
+                </div>
+
+                <div class="data-section">
+                    <h3>Type Disadvantages</h3>
+                    <ul id="typeDisadvantagesList"></ul>
+                </div>
+            </div>
+
+            <div class="data-section">
+                <h3>Moves</h3>
+                <ul id="movesList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Pokédex Pro. Data from <a href="https://pokeapi.co/" target="_blank">PokéAPI</a></p>
+    </footer>
+</body>
+</html>
